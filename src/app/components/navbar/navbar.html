@@ -1,6 +1,38 @@
-<nav class="nav flex-column">
-  <a class="nav-link active" aria-current="page" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-</nav>
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark vh-100">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <span class="fs-4">Gestão de Custos</span>
+  </a>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a class="nav-link text-white" aria-current="page" routerLink="/home" [routerLinkActive]="['active']">
+        Home
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="/abastecimentos" [routerLinkActive]="['active']">
+        Abastecimentos
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="/postos" [routerLinkActive]="['active']">
+        Postos
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link text-white">
+        Products
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link text-white">
+        Customers
+      </a>
+    </li>
+  </ul>
+  <hr>
+</div>
