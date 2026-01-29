@@ -1,2 +1,29 @@
-<p>tab-abastecimentos works!</p>
-<div class="container w-100 bg-dark">banana</div>
+<app-abastecimento></app-abastecimento>
+
+<p class="mt-3 h4 fw-bold text-white">Abastecimentos Registrados:</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Data</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Posto</th>
+            <th scope="col">Status</th>
+            <th scope="col">Opções</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngIf="abastecimento of abastecimentos">
+            <th scope="row">{{abastecimento.id}}</th>
+            <td>{{abastecimento.date}}</td>
+            <td>{{abastecimento.price}}</td>
+            <td>{{abastecimento.posto?.name}}</td>
+            <td>{{abastecimento.statusPay}}</td>
+            <td>
+                <i class="bi bi-pencil p-1 me-2" style="font-size: 1.25rem; color: #1E90FF; cursor: pointer;"></i>
+                <i class="bi bi-trash-fill" style="font-size: 1.25rem; color: red; cursor: pointer;"></i>
+            </td>
+        </tr>
+    </tbody>
+</table>

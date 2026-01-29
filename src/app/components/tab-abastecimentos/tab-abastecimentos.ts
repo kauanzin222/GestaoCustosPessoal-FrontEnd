@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AbastecimentoInterface } from '../../interfaces/AbastecimentoInterface';
 
 @Component({
   selector: 'app-tab-abastecimentos',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './tab-abastecimentos.css',
 })
 export class TabAbastecimentos {
+  // Criando objetos vazios
+  abastecimentos: AbastecimentoInterface[] = [];
+  abastecimento: AbastecimentoInterface = {} as AbastecimentoInterface;
 
+  
 }

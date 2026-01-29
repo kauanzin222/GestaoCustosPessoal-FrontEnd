@@ -10,7 +10,6 @@ import { TabAbastecimentos } from './components/tab-abastecimentos/tab-abastecim
 import { TabPosto } from './components/tab-posto/tab-posto';
 import { Posto } from './components/posto/posto';
 import { Header } from './components/header/header';
-import { Footer } from './components/header/components/footer/footer';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -22,8 +21,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TabAbastecimentos,
     TabPosto,
     Posto,
-    Header,
-    Footer
+    Header
   ],
   imports: [
     BrowserModule,
