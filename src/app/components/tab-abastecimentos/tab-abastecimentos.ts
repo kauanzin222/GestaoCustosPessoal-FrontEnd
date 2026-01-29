@@ -12,5 +12,7 @@ export class TabAbastecimentos {
   abastecimentos: AbastecimentoInterface[] = [];
   abastecimento: AbastecimentoInterface = {} as AbastecimentoInterface;
 
-  
+  saveAbastecimento() {
+    this.abastecimentos.push(this.abastecimento);
+  }
 }
